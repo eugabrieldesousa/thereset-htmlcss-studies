@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The reset</title>
 </head>
+
 <body>
-    <ul style="list-style-type: none">
-        <li>Tomar café da manhã</li>
-        <li>Trabalhar</li>
-        <li>Lavar café</li>
-        <li>Escovar</li>
-    </ul>
+    <form action="envio.php" method="POST">
+        <input type="text" name="nome">
+        <br>
+        <br>
+        <input type="checkbox" name="temcarro"> Eu tenho um carro
+        <br>
+        <br>
+        Data de Nascimento: <input type="date" name="aniversario">
+        <br><br>
+        <input type="radio" name="sexo" value="masculino"> Masculino
+        <input type="radio" name="sexo" value="feminino"> Feminino
+        <br>
+        <br>
+        <input type="submit" value="Enviar">
 </body>
+
 </html>
